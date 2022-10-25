@@ -44,7 +44,7 @@
 }
 
 .jump{
-	animation: jump 500ms ease-out;
+	animation: jump 500ms ease-in-out;
 }
 
 @keyframes jump {
@@ -52,8 +52,12 @@
 		bottom: 0;
 	}
 
+	30%{
+		bottom: 140px;
+	}
+
 	40%{
-		bottom: 180px;
+		bottom: 160px;
 	}
 
 	50%{
@@ -61,7 +65,11 @@
 	}
 
 	60%{
-		bottom: 180px;
+		bottom: 160px;
+	}
+
+	70%{
+		bottom: 140px;
 	}
 
 	100%{
